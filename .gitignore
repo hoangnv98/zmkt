@@ -1,0 +1,12 @@
+node_modules
+.next
+.env*.local
+.impeccable/config.local.json
+
+# dữ liệu local
+.data
+.env*.local
+
+.DS_Store
+*.tsbuildinfo
+.impeccable/hook.cache.json

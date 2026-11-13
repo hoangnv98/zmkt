@@ -1,0 +1,713 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T07:16:25.198Z",
+  "title": "Design System: Z.MKT",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Nền bàn",
+        "canonical": "oklch(92.8% 0.005 95)",
+        "tonalRamp": [
+          "oklch(15% 0.003 95)",
+          "oklch(27% 0.004 95)",
+          "oklch(39% 0.005 95)",
+          "oklch(51% 0.005 95)",
+          "oklch(63% 0.005 95)",
+          "oklch(75% 0.004 95)",
+          "oklch(87% 0.004 95)",
+          "oklch(95% 0.003 95)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Tấm trắng",
+        "canonical": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(27% 0.000 90)",
+          "oklch(39% 0.000 90)",
+          "oklch(51% 0.000 90)",
+          "oklch(63% 0.000 90)",
+          "oklch(75% 0.000 90)",
+          "oklch(87% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ]
+      },
+      "chatbg": {
+        "role": "neutral",
+        "displayName": "Tấm chat",
+        "canonical": "oklch(96.1% 0.004 91)",
+        "tonalRamp": [
+          "oklch(15% 0.002 91)",
+          "oklch(27% 0.003 91)",
+          "oklch(39% 0.003 91)",
+          "oklch(51% 0.004 91)",
+          "oklch(63% 0.004 91)",
+          "oklch(75% 0.003 91)",
+          "oklch(87% 0.003 91)",
+          "oklch(95% 0.002 91)"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Nền mềm",
+        "canonical": "oklch(97.3% 0.004 91)",
+        "tonalRamp": [
+          "oklch(15% 0.002 91)",
+          "oklch(27% 0.003 91)",
+          "oklch(39% 0.003 91)",
+          "oklch(51% 0.004 91)",
+          "oklch(63% 0.004 91)",
+          "oklch(75% 0.003 91)",
+          "oklch(87% 0.003 91)",
+          "oklch(95% 0.002 91)"
+        ]
+      },
+      "soft-2": {
+        "role": "neutral",
+        "displayName": "Xám đá",
+        "canonical": "oklch(94.0% 0.005 95)",
+        "tonalRamp": [
+          "oklch(15% 0.003 95)",
+          "oklch(27% 0.004 95)",
+          "oklch(39% 0.005 95)",
+          "oklch(51% 0.005 95)",
+          "oklch(63% 0.005 95)",
+          "oklch(75% 0.004 95)",
+          "oklch(87% 0.004 95)",
+          "oklch(95% 0.003 95)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Nét kẻ",
+        "canonical": "oklch(91.0% 0.007 89)",
+        "tonalRamp": [
+          "oklch(15% 0.004 89)",
+          "oklch(27% 0.005 89)",
+          "oklch(39% 0.006 89)",
+          "oklch(51% 0.007 89)",
+          "oklch(63% 0.007 89)",
+          "oklch(75% 0.006 89)",
+          "oklch(87% 0.005 89)",
+          "oklch(95% 0.004 89)"
+        ]
+      },
+      "line-2": {
+        "role": "neutral",
+        "displayName": "Nét đậm",
+        "canonical": "oklch(86.7% 0.010 87)",
+        "tonalRamp": [
+          "oklch(15% 0.006 87)",
+          "oklch(27% 0.007 87)",
+          "oklch(39% 0.008 87)",
+          "oklch(51% 0.010 87)",
+          "oklch(63% 0.009 87)",
+          "oklch(75% 0.008 87)",
+          "oklch(87% 0.007 87)",
+          "oklch(95% 0.006 87)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Mực",
+        "canonical": "oklch(24.8% 0.030 265)",
+        "tonalRamp": [
+          "oklch(15% 0.018 265)",
+          "oklch(27% 0.022 265)",
+          "oklch(39% 0.026 265)",
+          "oklch(51% 0.029 265)",
+          "oklch(63% 0.028 265)",
+          "oklch(75% 0.024 265)",
+          "oklch(87% 0.021 265)",
+          "oklch(95% 0.018 265)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Mực phụ",
+        "canonical": "oklch(49.8% 0.026 263)",
+        "tonalRamp": [
+          "oklch(15% 0.016 263)",
+          "oklch(27% 0.019 263)",
+          "oklch(39% 0.022 263)",
+          "oklch(51% 0.025 263)",
+          "oklch(63% 0.024 263)",
+          "oklch(75% 0.021 263)",
+          "oklch(87% 0.018 263)",
+          "oklch(95% 0.016 263)"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Mực mờ",
+        "canonical": "oklch(61.8% 0.015 258)",
+        "tonalRamp": [
+          "oklch(15% 0.009 258)",
+          "oklch(27% 0.011 258)",
+          "oklch(39% 0.013 258)",
+          "oklch(51% 0.015 258)",
+          "oklch(63% 0.014 258)",
+          "oklch(75% 0.012 258)",
+          "oklch(87% 0.010 258)",
+          "oklch(95% 0.009 258)"
+        ]
+      },
+      "navy": {
+        "role": "primary",
+        "displayName": "Navy",
+        "canonical": "oklch(35.4% 0.092 261)",
+        "tonalRamp": [
+          "oklch(15% 0.055 261)",
+          "oklch(27% 0.066 261)",
+          "oklch(39% 0.077 261)",
+          "oklch(51% 0.088 261)",
+          "oklch(63% 0.084 261)",
+          "oklch(75% 0.073 261)",
+          "oklch(87% 0.062 261)",
+          "oklch(95% 0.055 261)"
+        ]
+      },
+      "navy-2": {
+        "role": "primary",
+        "displayName": "Navy sáng",
+        "canonical": "oklch(42.4% 0.103 260)",
+        "tonalRamp": [
+          "oklch(15% 0.062 260)",
+          "oklch(27% 0.074 260)",
+          "oklch(39% 0.087 260)",
+          "oklch(51% 0.099 260)",
+          "oklch(63% 0.095 260)",
+          "oklch(75% 0.083 260)",
+          "oklch(87% 0.070 260)",
+          "oklch(95% 0.062 260)"
+        ]
+      },
+      "navy-l": {
+        "role": "primary",
+        "displayName": "Navy nhạt",
+        "canonical": "oklch(93.8% 0.017 259)",
+        "tonalRamp": [
+          "oklch(15% 0.010 259)",
+          "oklch(27% 0.012 259)",
+          "oklch(39% 0.014 259)",
+          "oklch(51% 0.016 259)",
+          "oklch(63% 0.015 259)",
+          "oklch(75% 0.013 259)",
+          "oklch(87% 0.011 259)",
+          "oklch(95% 0.010 259)"
+        ]
+      },
+      "blue": {
+        "role": "secondary",
+        "displayName": "Xanh hành động",
+        "canonical": "oklch(57.4% 0.195 258)",
+        "tonalRamp": [
+          "oklch(15% 0.117 258)",
+          "oklch(27% 0.140 258)",
+          "oklch(39% 0.163 258)",
+          "oklch(51% 0.187 258)",
+          "oklch(63% 0.179 258)",
+          "oklch(75% 0.156 258)",
+          "oklch(87% 0.132 258)",
+          "oklch(95% 0.117 258)"
+        ]
+      },
+      "blue-d": {
+        "role": "secondary",
+        "displayName": "Xanh đậm",
+        "canonical": "oklch(47.9% 0.165 259)",
+        "tonalRamp": [
+          "oklch(15% 0.099 259)",
+          "oklch(27% 0.119 259)",
+          "oklch(39% 0.139 259)",
+          "oklch(51% 0.159 259)",
+          "oklch(63% 0.152 259)",
+          "oklch(75% 0.132 259)",
+          "oklch(87% 0.112 259)",
+          "oklch(95% 0.099 259)"
+        ]
+      },
+      "blue-l": {
+        "role": "secondary",
+        "displayName": "Xanh nhạt",
+        "canonical": "oklch(94.5% 0.022 254)",
+        "tonalRamp": [
+          "oklch(15% 0.013 254)",
+          "oklch(27% 0.016 254)",
+          "oklch(39% 0.019 254)",
+          "oklch(51% 0.021 254)",
+          "oklch(63% 0.021 254)",
+          "oklch(75% 0.018 254)",
+          "oklch(87% 0.015 254)",
+          "oklch(95% 0.013 254)"
+        ]
+      },
+      "grey-bar": {
+        "role": "tertiary",
+        "displayName": "Xám đã dừng",
+        "canonical": "oklch(70.7% 0.018 259)",
+        "tonalRamp": [
+          "oklch(15% 0.011 259)",
+          "oklch(27% 0.013 259)",
+          "oklch(39% 0.015 259)",
+          "oklch(51% 0.017 259)",
+          "oklch(63% 0.016 259)",
+          "oklch(75% 0.014 259)",
+          "oklch(87% 0.012 259)",
+          "oklch(95% 0.011 259)"
+        ]
+      },
+      "orange": {
+        "role": "tertiary",
+        "displayName": "Cam chờ",
+        "canonical": "oklch(76.2% 0.142 72)",
+        "tonalRamp": [
+          "oklch(15% 0.085 72)",
+          "oklch(27% 0.102 72)",
+          "oklch(39% 0.119 72)",
+          "oklch(51% 0.136 72)",
+          "oklch(63% 0.130 72)",
+          "oklch(75% 0.113 72)",
+          "oklch(87% 0.096 72)",
+          "oklch(95% 0.085 72)"
+        ]
+      },
+      "orange-l": {
+        "role": "tertiary",
+        "displayName": "Vàng nhạt",
+        "canonical": "oklch(97.3% 0.020 82)",
+        "tonalRamp": [
+          "oklch(15% 0.012 82)",
+          "oklch(27% 0.015 82)",
+          "oklch(39% 0.017 82)",
+          "oklch(51% 0.020 82)",
+          "oklch(63% 0.019 82)",
+          "oklch(75% 0.016 82)",
+          "oklch(87% 0.014 82)",
+          "oklch(95% 0.012 82)"
+        ]
+      },
+      "orange-line": {
+        "role": "tertiary",
+        "displayName": "Viền vàng",
+        "canonical": "oklch(84.8% 0.092 82)",
+        "tonalRamp": [
+          "oklch(15% 0.055 82)",
+          "oklch(27% 0.066 82)",
+          "oklch(39% 0.077 82)",
+          "oklch(51% 0.088 82)",
+          "oklch(63% 0.084 82)",
+          "oklch(75% 0.073 82)",
+          "oklch(87% 0.062 82)",
+          "oklch(95% 0.055 82)"
+        ]
+      },
+      "orange-d": {
+        "role": "tertiary",
+        "displayName": "Nâu cam",
+        "canonical": "oklch(49.4% 0.109 67)",
+        "tonalRamp": [
+          "oklch(15% 0.066 67)",
+          "oklch(27% 0.079 67)",
+          "oklch(39% 0.092 67)",
+          "oklch(51% 0.105 67)",
+          "oklch(63% 0.101 67)",
+          "oklch(75% 0.087 67)",
+          "oklch(87% 0.074 67)",
+          "oklch(95% 0.066 67)"
+        ]
+      },
+      "step-apricot": {
+        "role": "tertiary",
+        "displayName": "Mơ bước",
+        "canonical": "oklch(84.6% 0.106 74)",
+        "tonalRamp": [
+          "oklch(15% 0.064 74)",
+          "oklch(27% 0.076 74)",
+          "oklch(39% 0.089 74)",
+          "oklch(51% 0.102 74)",
+          "oklch(63% 0.097 74)",
+          "oklch(75% 0.085 74)",
+          "oklch(87% 0.072 74)",
+          "oklch(95% 0.064 74)"
+        ]
+      },
+      "green-l": {
+        "role": "tertiary",
+        "displayName": "Lá non",
+        "canonical": "oklch(91.1% 0.084 132)",
+        "tonalRamp": [
+          "oklch(15% 0.051 132)",
+          "oklch(27% 0.061 132)",
+          "oklch(39% 0.071 132)",
+          "oklch(51% 0.081 132)",
+          "oklch(63% 0.077 132)",
+          "oklch(75% 0.067 132)",
+          "oklch(87% 0.057 132)",
+          "oklch(95% 0.051 132)"
+        ]
+      },
+      "green-d": {
+        "role": "tertiary",
+        "displayName": "Lá đậm",
+        "canonical": "oklch(46.6% 0.132 139)",
+        "tonalRamp": [
+          "oklch(15% 0.079 139)",
+          "oklch(27% 0.095 139)",
+          "oklch(39% 0.111 139)",
+          "oklch(51% 0.127 139)",
+          "oklch(63% 0.122 139)",
+          "oklch(75% 0.106 139)",
+          "oklch(87% 0.090 139)",
+          "oklch(95% 0.079 139)"
+        ]
+      },
+      "ok": {
+        "role": "tertiary",
+        "displayName": "Xanh lá đạt",
+        "canonical": "oklch(51.4% 0.118 153)",
+        "tonalRamp": [
+          "oklch(15% 0.071 153)",
+          "oklch(27% 0.085 153)",
+          "oklch(39% 0.100 153)",
+          "oklch(51% 0.114 153)",
+          "oklch(63% 0.109 153)",
+          "oklch(75% 0.095 153)",
+          "oklch(87% 0.081 153)",
+          "oklch(95% 0.071 153)"
+        ]
+      },
+      "bad": {
+        "role": "tertiary",
+        "displayName": "Đỏ trần",
+        "canonical": "oklch(50.9% 0.163 25)",
+        "tonalRamp": [
+          "oklch(15% 0.098 25)",
+          "oklch(27% 0.117 25)",
+          "oklch(39% 0.137 25)",
+          "oklch(51% 0.156 25)",
+          "oklch(63% 0.150 25)",
+          "oklch(75% 0.130 25)",
+          "oklch(87% 0.111 25)",
+          "oklch(95% 0.098 25)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Chỉ tiêu đề trang đăng nhập."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Câu lớn ở cột phải trang đăng nhập."
+      },
+      "numeral-lg": {
+        "displayName": "Numeral lớn",
+        "purpose": "Số tóm tắt cạnh tiêu đề trang."
+      },
+      "logo": {
+        "displayName": "Logo",
+        "purpose": "Chữ Z.MKT."
+      },
+      "statement": {
+        "displayName": "Statement",
+        "purpose": "Câu chính trong bảng định nghĩa."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Tên trong đầu khung chat."
+      },
+      "page-title": {
+        "displayName": "Page title",
+        "purpose": "Tiêu đề trang, chữ hoa navy."
+      },
+      "section-title": {
+        "displayName": "Section title",
+        "purpose": "Tiêu đề mục trong trang, chữ hoa navy."
+      },
+      "sheet-title": {
+        "displayName": "Sheet title",
+        "purpose": "Dải tên trên đầu thẻ và hàng nhóm, chữ hoa navy."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Câu văn, nội dung ô, tên chiến dịch."
+      },
+      "body-chat": {
+        "displayName": "Body chat",
+        "purpose": "Tin nhắn, ô hỏi, tên kết nối."
+      },
+      "body-sm": {
+        "displayName": "Body nhỏ",
+        "purpose": "Dòng phụ, chú thích, nhãn số tóm tắt."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Số trong ô bảng và lưới tuần, căn phải, dạng bảng."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Nhãn nút."
+      },
+      "button-sm": {
+        "displayName": "Button nhỏ",
+        "purpose": "Nhãn nút cỡ nhỏ."
+      },
+      "nav": {
+        "displayName": "Nav",
+        "purpose": "Thanh bước."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Nhãn cột, nhãn thanh tuần."
+      },
+      "badge": {
+        "displayName": "Badge",
+        "purpose": "Viên thuốc quyền, số bước."
+      },
+      "micro": {
+        "displayName": "Micro",
+        "purpose": "Thẻ đếm, nhãn thẻ chat, nhãn vạch trần."
+      }
+    },
+    "shadows": [
+      {
+        "name": "tab-lift",
+        "value": "0 1px 2px rgba(26, 33, 48, 0.12), 0 0 0 1px var(--line)",
+        "purpose": "Mục tab hoặc nút chọn cách xem đang chọn."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px var(--blue-l)",
+        "purpose": "Ô nhập của form khi focus."
+      },
+      {
+        "name": "chat-drawer",
+        "value": "0 12px 40px rgba(26, 33, 48, 0.22)",
+        "purpose": "Ngăn chat trượt dưới 1100px."
+      },
+      {
+        "name": "sticky-rule",
+        "value": "1px 0 0 var(--line)",
+        "purpose": "Cột tên dính bên trái của lưới tuần dưới 760px."
+      }
+    ],
+    "motion": [
+      {
+        "name": "settle",
+        "value": "clip-path inset(0 100% 0 0) -> inset(0) 0.5s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Thanh tuần vén ra từ trái khi được duyệt."
+      },
+      {
+        "name": "budget-grow",
+        "value": "height 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Cột ngân sách đổi chiều cao khi quyết định thay đổi."
+      },
+      {
+        "name": "progress",
+        "value": "width 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Thanh tiến độ kết nối."
+      },
+      {
+        "name": "drawer",
+        "value": "transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Ngăn chat trượt vào dưới 1100px."
+      },
+      {
+        "name": "button-state",
+        "value": "background 0.15s, border-color 0.15s",
+        "purpose": "Hover của nút."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition: none",
+        "purpose": "Tắt mọi chuyển động khi prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "hide-spend",
+        "value": "1540px"
+      },
+      {
+        "name": "chat-drawer",
+        "value": "1100px"
+      },
+      {
+        "name": "narrow",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Nút chính",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Hành động đồng ý hoặc đi tiếp; mỗi nhóm nút một cái, đứng cuối.",
+      "html": "<button class=\"ds-btn\">Tăng lên 15 tr/tháng</button>",
+      "css": ".ds-btn { font: 700 15px var(--sans); padding: 8px 16px; border-radius: var(--r-ctl); border: 1px solid var(--navy); background: var(--navy); color: #fff; display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; cursor: pointer; transition: background 0.15s, border-color 0.15s; } .ds-btn:hover { background: var(--navy-2); } .ds-btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; } .ds-btn:disabled { background: var(--soft); border-color: var(--line); color: var(--ink-3); cursor: not-allowed; } .ds-btn-ghost { background: var(--panel); color: var(--ink); border-color: var(--line-2); } .ds-btn-ghost:hover { background: var(--panel); border-color: var(--ink-2); } .ds-btn-sm { padding: 5px 12px; font-size: 14px; }"
+    },
+    {
+      "name": "Nút phụ",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Các lựa chọn còn lại trong nhóm nút.",
+      "html": "<button class=\"ds-btn ds-btn-ghost\">Thử thêm 2 tuần · 5 tr</button> <button class=\"ds-btn ds-btn-ghost ds-btn-sm\">Kết nối</button>",
+      "css": ".ds-btn { font: 700 15px var(--sans); padding: 8px 16px; border-radius: var(--r-ctl); border: 1px solid var(--navy); background: var(--navy); color: #fff; display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; cursor: pointer; transition: background 0.15s, border-color 0.15s; } .ds-btn:hover { background: var(--navy-2); } .ds-btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; } .ds-btn:disabled { background: var(--soft); border-color: var(--line); color: var(--ink-3); cursor: not-allowed; } .ds-btn-ghost { background: var(--panel); color: var(--ink); border-color: var(--line-2); } .ds-btn-ghost:hover { background: var(--panel); border-color: var(--ink-2); } .ds-btn-sm { padding: 5px 12px; font-size: 14px; }"
+    },
+    {
+      "name": "Viên thuốc quyền",
+      "kind": "chip",
+      "refersTo": "pill-full",
+      "description": "Bốn mức quyền kết nối, bốn màu cố định.",
+      "html": "<span class=\"ds-pill ds-full\">Toàn quyền</span> <span class=\"ds-pill ds-read\">Đọc dữ liệu</span> <span class=\"ds-pill ds-link\">Chỉ link</span> <button class=\"ds-pill ds-rec\">Nên kết nối</button>",
+      "css": ".ds-pill { display: inline-flex; align-items: center; gap: 5px; font: 700 13px var(--sans); padding: 3px 11px; border-radius: 999px; white-space: nowrap; border: 0; } .ds-full { background: var(--navy); color: #fff; } .ds-read { background: var(--blue-l); color: var(--blue-d); } .ds-link { background: #ecebe7; color: var(--ink-2); } .ds-rec { background: var(--green-l); color: var(--green-d); cursor: pointer; } .ds-rec:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }"
+    },
+    {
+      "name": "Thanh bước",
+      "kind": "nav",
+      "refersTo": "stepper",
+      "description": "Ba bước dạng viên thuốc; bước hiện tại nền navy với vòng số màu mơ.",
+      "html": "<nav class=\"ds-steps\"><a href=\"#\"><b>1</b><span>Thương hiệu</span></a><a href=\"#\"><b>2</b><span>Thị trường</span></a><a href=\"#\" aria-current=\"page\"><b>3</b><span>Triển khai</span></a></nav>",
+      "css": ".ds-steps { display: inline-flex; gap: 2px; padding: 4px; background: var(--soft); border: 1px solid var(--line); border-radius: 999px; font-family: var(--sans); } .ds-steps a { display: flex; align-items: center; gap: 8px; padding: 6px 16px 6px 6px; border-radius: 999px; color: var(--ink); font-weight: 600; font-size: 15px; white-space: nowrap; text-decoration: none; } .ds-steps a:hover { background: #ecebe7; } .ds-steps a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; } .ds-steps a b { font-size: 13px; font-weight: 700; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; background: var(--panel); border: 1px solid var(--line); } .ds-steps a[aria-current=\"page\"] { background: var(--navy); color: #fff; } .ds-steps a[aria-current=\"page\"] b { background: #f6c27c; border-color: #f6c27c; color: #4a2a00; }"
+    },
+    {
+      "name": "Tab",
+      "kind": "nav",
+      "refersTo": "tabs",
+      "description": "Nhóm tab nền mềm; mục đang chọn là thẻ trắng nhấc nhẹ; thẻ đếm cam khi có việc chờ.",
+      "html": "<div class=\"ds-tabs\"><button aria-pressed=\"false\">Tiềm năng</button><button aria-pressed=\"true\">Chiến lược <span class=\"ds-count ds-wait\">1</span></button><span aria-disabled=\"true\">Đối thủ <span class=\"ds-tag\">v1.1</span></span></div>",
+      "css": ".ds-tabs { display: inline-flex; gap: 2px; padding: 3px; background: var(--soft); border: 1px solid var(--line); border-radius: 10px; font: 600 14.5px var(--sans); } .ds-tabs > * { padding: 5px 13px; color: var(--ink-2); background: none; border: 0; border-radius: 7px; display: inline-flex; gap: 7px; align-items: center; white-space: nowrap; font: inherit; cursor: pointer; } .ds-tabs > *:hover { color: var(--ink); } .ds-tabs > *:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; } .ds-tabs > [aria-pressed=\"true\"] { background: var(--panel); color: var(--ink); box-shadow: 0 1px 2px rgba(26, 33, 48, 0.12), 0 0 0 1px var(--line); } .ds-tabs > [aria-disabled=\"true\"] { color: var(--ink-3); cursor: default; } .ds-count { font-size: 12.5px; font-weight: 700; background: var(--navy-l); color: var(--navy); padding: 1px 8px; border-radius: 999px; } .ds-count.ds-wait { background: var(--orange); color: #3a2000; } .ds-tag { font-size: 12.5px; font-weight: 600; padding: 1px 8px; border-radius: 999px; background: var(--soft); border: 1px solid var(--line); color: var(--ink-2); }"
+    },
+    {
+      "name": "Lưới kế hoạch tuần",
+      "kind": "custom",
+      "refersTo": "flight-done",
+      "description": "Chiến dịch là viên thuốc trên trục tuần; chất liệu thanh cho biết đã chi, đã duyệt, kế hoạch, chờ bạn hay đã dừng.",
+      "html": "<div class=\"ds-plan\"><div class=\"ds-h ds-l\">Chiến dịch · Meta Ads</div><div class=\"ds-h\">T41<small>5/10</small></div><div class=\"ds-h\">T42<small>12/10</small></div><div class=\"ds-h ds-now\">T43<small>19/10</small></div><div class=\"ds-h\">T44<small>26/10</small></div><div class=\"ds-h\">Chi phí / đơn</div><div class=\"ds-grp\">Người trẻ đô thị · chạy thử đã xong</div><div class=\"ds-name\"><b>Video quy trình vẽ</b><small>Đạt tiêu chí</small></div><div class=\"ds-flight\" style=\"grid-column: span 2\"><div class=\"ds-f ds-done\">Thử · 2,90 tr</div></div><div class=\"ds-flight\" style=\"grid-column: span 2\"><a href=\"#\" class=\"ds-f ds-wait\">Mở rộng · chờ bạn quyết</a></div><div class=\"ds-n ds-ok\">112.000 ₫<small>dưới tiêu chí</small></div><div class=\"ds-name\"><b>Ảnh sản phẩm dạng lật</b><small>Chưa đạt · đã dừng</small></div><div class=\"ds-flight\" style=\"grid-column: span 2\"><div class=\"ds-f ds-off\">Thử · 1,85 tr</div></div><div style=\"grid-column: span 2\"></div><div class=\"ds-n ds-bad\">154.000 ₫<small>trên tiêu chí</small></div><div class=\"ds-name\"><b>Hộp quà Tết</b><small>đã duyệt / kế hoạch</small></div><div class=\"ds-flight\" style=\"grid-column: span 2\"><div class=\"ds-f ds-approved\">Đã duyệt</div></div><div class=\"ds-flight\" style=\"grid-column: span 2\"><div class=\"ds-f ds-planned\">Kế hoạch</div></div><div class=\"ds-n\">180.000 ₫<small>tiêu chí</small></div></div>",
+      "css": ".ds-plan { display: grid; grid-template-columns: 206px repeat(4, minmax(56px, 1fr)) 112px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--r-card); overflow: hidden; font: 14.5px/1.5 var(--sans); color: var(--ink); min-width: 640px; } .ds-plan > div { border-bottom: 1px solid var(--line); border-right: 1px solid #efeee9; padding: 10px 12px; min-height: 58px; } .ds-plan > .ds-h { min-height: 0; padding: 9px 8px; font-size: 13.5px; font-weight: 700; color: var(--ink-2); text-align: center; background: var(--soft); } .ds-plan > .ds-h.ds-l { text-align: left; padding-left: 12px; } .ds-plan > .ds-h.ds-now { background: var(--navy-l); color: var(--navy); } .ds-plan > .ds-h small { display: block; font-weight: 500; font-size: 12.5px; } .ds-plan > .ds-grp { grid-column: 1 / -1; min-height: 0; padding: 7px 12px; background: var(--soft); font-size: 13px; font-weight: 800; color: var(--navy); letter-spacing: 0.06em; text-transform: uppercase; } .ds-name b { font-weight: 700; font-size: 16px; } .ds-name small { display: block; color: var(--ink-2); font-size: 14px; } .ds-n { text-align: right; font-weight: 700; font-size: 16px; font-variant-numeric: tabular-nums; } .ds-n small { display: block; font-weight: 500; font-size: 13px; color: var(--ink-2); } .ds-ok { color: var(--ok); } .ds-bad { color: var(--bad); } .ds-plan > .ds-flight { padding: 13px 3px; } .ds-f { height: 32px; display: flex; align-items: center; padding: 0 12px; font-size: 13.5px; font-weight: 700; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-radius: 999px; text-decoration: none; } .ds-done { background: var(--navy); } .ds-off { background: var(--grey-bar); } .ds-approved { background: var(--navy-l); color: var(--navy); border: 1.5px solid var(--navy-2); } .ds-planned { background: repeating-linear-gradient(135deg, var(--navy-l) 0 6px, #fff 6px 12px); color: var(--navy); border: 1.5px dashed var(--navy-2); } .ds-wait { background: var(--orange-l); color: var(--orange-d); border: 1.5px dashed var(--orange); } a.ds-wait:hover { background: #fbe9c9; } a.ds-wait:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }"
+    },
+    {
+      "name": "Thẻ quyết định",
+      "kind": "card",
+      "refersTo": "decide-card",
+      "description": "Việc chờ bạn: thẻ vàng nhạt viền đứt, câu hỏi, dòng hệ quả và các lựa chọn.",
+      "html": "<div class=\"ds-decide\"><p>Mở rộng “Video quy trình vẽ” lên 15 triệu ₫ mỗi tháng?<small>Vẫn trong trần 30 triệu. Ảnh sản phẩm dừng, tiền dồn sang video.</small></p><button class=\"ds-btn ds-btn-ghost\">Dừng hẳn</button><button class=\"ds-btn ds-btn-ghost\">Thử thêm 2 tuần · 5 tr</button><button class=\"ds-btn\">Tăng lên 15 tr/tháng</button></div>",
+      "css": ".ds-decide { background: var(--orange-l); border: 1.5px dashed var(--orange-line); border-radius: var(--r-card); padding: 14px 16px; display: flex; align-items: center; flex-wrap: wrap; gap: 10px; font: 16px/1.5 var(--sans); color: var(--ink); } .ds-decide p { flex: 1 1 320px; font-weight: 700; font-size: 16.5px; margin: 0; } .ds-decide p small { display: block; font-weight: 500; font-size: 14.5px; color: var(--orange-d); } .ds-btn { font: 700 15px var(--sans); padding: 8px 16px; border-radius: var(--r-ctl); border: 1px solid var(--navy); background: var(--navy); color: #fff; display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; cursor: pointer; transition: background 0.15s, border-color 0.15s; } .ds-btn:hover { background: var(--navy-2); } .ds-btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; } .ds-btn:disabled { background: var(--soft); border-color: var(--line); color: var(--ink-3); cursor: not-allowed; } .ds-btn-ghost { background: var(--panel); color: var(--ink); border-color: var(--line-2); } .ds-btn-ghost:hover { background: var(--panel); border-color: var(--ink-2); } .ds-btn-sm { padding: 5px 12px; font-size: 14px; }"
+    },
+    {
+      "name": "Bảng lưới",
+      "kind": "card",
+      "refersTo": "grid-cell",
+      "description": "Bảng bo 12px: hàng tiêu đề nền mềm, số căn phải dạng bảng, hàng chờ nền vàng nhạt.",
+      "html": "<table class=\"ds-grid\"><thead><tr><th>Chiến dịch</th><th class=\"ds-r\">Đã chi</th><th class=\"ds-r\">Chi phí / đơn</th></tr></thead><tbody><tr><td><b>Video quy trình vẽ</b><small>Người trẻ đô thị · Meta Ads</small></td><td class=\"ds-r\">2,90 tr</td><td class=\"ds-r ds-ok\">112.000 ₫</td></tr><tr class=\"ds-wait\"><td><b>Hộp quà Tết</b><small>Chờ bạn duyệt</small></td><td class=\"ds-r\">+10 tr/tháng</td><td class=\"ds-r\">180.000 ₫</td></tr></tbody></table>",
+      "css": ".ds-grid { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--panel); border: 1px solid var(--line); border-radius: var(--r-card); overflow: hidden; font: 16px/1.5 var(--sans); color: var(--ink); } .ds-grid th { font-size: 13.5px; font-weight: 700; color: var(--ink-2); text-align: left; padding: 10px 14px; background: var(--soft); border-bottom: 1px solid var(--line); white-space: nowrap; } .ds-grid td { padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; } .ds-grid tr:last-child td { border-bottom: 0; } .ds-grid td small { display: block; color: var(--ink-2); font-size: 14px; } .ds-grid .ds-r { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; } .ds-grid th.ds-r { font-size: 13.5px; } .ds-grid tr.ds-wait td { background: var(--orange-l); } .ds-ok { color: var(--ok); }"
+    },
+    {
+      "name": "Ô nhập",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Nhãn phía trên, góc 10px, focus đổi viền xanh kèm quầng 3px, lỗi là một dòng chữ đỏ.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-email\">Email</label><input id=\"ds-email\" type=\"email\" value=\"ten@congty\"><span class=\"ds-err\">Email chưa đúng dạng, ví dụ ten@congty.vn.</span></div>",
+      "css": ".ds-field { display: grid; gap: 5px; max-width: 380px; font: 16px/1.5 var(--sans); color: var(--ink); } .ds-field label { font-weight: 700; font-size: 14.5px; } .ds-field input { font: inherit; color: inherit; border: 1px solid var(--line-2); border-radius: 10px; padding: 11px 13px; background: var(--panel); caret-color: var(--blue); } .ds-field input:focus { border-color: var(--blue); outline: 0; box-shadow: 0 0 0 3px var(--blue-l); } .ds-err { color: var(--bad); font-size: 14.5px; }"
+    },
+    {
+      "name": "Chat",
+      "kind": "custom",
+      "refersTo": "chat-bubble",
+      "description": "Tấm chat xám nhạt: ô Z navy, bong bóng trắng viền, bong bóng người dùng xanh, ô hỏi với nút gửi tròn.",
+      "html": "<div class=\"ds-chat\"><div class=\"ds-mrow\"><span class=\"ds-av\">Z</span><div class=\"ds-m\">Chạy thử đã xong. Đây là điều mình học được:</div></div><div class=\"ds-m ds-me\">Chạy thử trước đi.</div><form class=\"ds-ask\" onsubmit=\"return false\"><input placeholder=\"Hỏi hoặc nhờ Z.MKT làm gì đó\" aria-label=\"Hỏi hoặc nhờ Z.MKT\"><button type=\"submit\" aria-label=\"Gửi\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 13V3M3.5 7.5L8 3l4.5 4.5\"/></svg></button></form></div>",
+      "css": ".ds-chat { display: flex; flex-direction: column; gap: 10px; background: var(--chatbg); border: 1px solid #e0ded8; border-radius: var(--r-panel); padding: 16px; max-width: 384px; font: 16px/1.5 var(--sans); color: var(--ink); } .ds-mrow { display: flex; align-items: flex-end; gap: 8px; max-width: 92%; } .ds-av { flex: none; width: 24px; height: 24px; border-radius: 6px; background: var(--navy); color: #fff; display: grid; place-items: center; font-size: 12px; font-weight: 800; } .ds-m { padding: 10px 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; font-size: 15.5px; } .ds-m.ds-me { align-self: flex-end; max-width: 85%; background: var(--blue); border-color: var(--blue); color: #fff; } .ds-ask { display: flex; align-items: center; gap: 6px; background: var(--panel); border: 1px solid var(--line-2); border-radius: 14px; padding: 6px 6px 6px 8px; } .ds-ask:focus-within { border-color: var(--blue); } .ds-ask input { flex: 1; min-width: 0; border: 0; padding: 8px 4px; outline: 0; background: none; font: inherit; font-size: 15.5px; color: inherit; } .ds-ask input::placeholder { color: var(--ink-3); } .ds-ask button { flex: none; width: 38px; height: 38px; border: 0; border-radius: 50%; background: var(--blue); color: #fff; display: grid; place-items: center; cursor: pointer; } .ds-ask button:hover { background: var(--blue-d); } .ds-ask button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Hai tấm trên bàn",
+    "overview": "Z.MKT là hai tấm bo tròn đặt cạnh nhau trên một mặt bàn xám ấm (`ground`). Tấm trắng bên trái (`panel`) là chỗ làm việc: hồ sơ thương hiệu, kết nối, chiến lược, kế hoạch tuần và mọi khoản tiền cần duyệt. Tấm xám nhạt bên phải (`chatbg`) là cuộc trò chuyện với Z.MKT. Người dùng luôn thấy cả hai: thứ Z.MKT đang làm và thứ Z.MKT đang nói.\n\nHệ thống này thay cho hướng \"tờ flight plan\" trước đó (thanh trên màu đá phiến, tờ kẻ góc vuông, Barlow và Barlow Semi Condensed). Người dùng đã từ chối hướng đó vì chữ quá nhỏ và trông như máy làm, rồi đưa ảnh tham chiếu của riêng họ. Bản dựng hiện tại đi theo ảnh đó: một họ chữ Archivo, chữ thân 16px, góc bo rõ, viên thuốc cho mọi nhãn trạng thái, tiêu đề chữ hoa màu navy giãn chữ.\n\nMàu vẫn mang nghĩa về tiền và về việc. Navy là tiền đã chi và thứ đã cam kết; sọc chéo viền đứt là kế hoạch chưa hỏi; vàng cam là thứ đang chờ bạn; đỏ là vạch trần, thứ vượt tiêu chí và lệnh dừng chi; xanh lá là thứ đạt tiêu chí. Ngoài các nghĩa đó, giao diện gần như chỉ có trắng, xám ấm và navy.",
+    "keyCharacteristics": [
+      "Hai tấm bo 16px trên nền xám ấm, cách nhau và cách mép 12px; chat rộng 384px bên phải.",
+      "Một họ chữ Archivo cho mọi thứ; chữ thân 16px, không có chữ nào dưới 12px.",
+      "Tiêu đề trang và tiêu đề mục là chữ hoa navy đậm 800, giãn chữ 0.06 đến 0.07em.",
+      "Mọi nhãn trạng thái là viên thuốc bo 999px; bốn mức quyền kết nối có bốn màu cố định.",
+      "Thanh bước dạng viên thuốc, bước hiện tại nền navy với số trong vòng tròn màu mơ.",
+      "Việc chờ bạn là thẻ vàng nhạt viền đứt; cam chỉ xuất hiện khi có việc chờ.",
+      "Lưới kế hoạch tuần vẫn là nơi đọc tiền theo thời gian, nay với thanh bo tròn hoàn toàn."
+    ],
+    "rules": [
+      {
+        "name": "Quy tắc Cam Chờ Quyết",
+        "body": "Cam và vàng nhạt chỉ xuất hiện ở thứ đang chờ người dùng quyết hoặc làm: nhãn chờ, thẻ đếm chờ, thẻ quyết định, hàng bảng chờ, thanh tuần chờ, cột tiền chờ, nhóm kết nối được đề xuất. Không có việc chờ thì màn hình không có cam. Vòng số mơ của bước hiện tại là ngoại lệ duy nhất đã được người dùng chọn và dùng màu riêng (`step-apricot`), không dùng `orange`.",
+        "section": "colors"
+      },
+      {
+        "name": "Quy tắc Chất Liệu Của Tiền",
+        "body": "Trên lưới tuần, một khoản tiền có đúng một chất liệu. Nền navy liền: đã chạy, đã chi. Nền navy nhạt viền liền 1.5px `navy-2`: đã duyệt, chưa chi. Sọc chéo 135 độ navy nhạt và trắng, viền đứt 1.5px `navy-2`: kế hoạch, chưa hỏi người dùng. Nền vàng nhạt viền đứt 1.5px `orange`: đang chờ người dùng. Nền `grey-bar` liền: đã chạy nhưng không đạt, đã dừng. Viền liền là đã cam kết; viền đứt là chưa.",
+        "section": "colors"
+      },
+      {
+        "name": "Quy tắc Đỏ Và Xanh Lá",
+        "body": "`bad` thuộc về vạch trần, thứ vượt tiêu chí, lỗi nhập và lệnh dừng chi. `ok` thuộc về thứ đạt tiêu chí và việc đã xong. Cả hai tô chữ, số, biểu tượng và nét kẻ; khối nền đỏ duy nhất là nút dừng chi khi đang dừng. Viên thuốc \"Nên kết nối\" dùng cặp lá non riêng (`green-l`, `green-d`), không dùng `ok`.",
+        "section": "colors"
+      },
+      {
+        "name": "Quy tắc Bốn Mức Quyền",
+        "body": "Quyền kết nối luôn là viên thuốc với bốn màu cố định: Toàn quyền nền `navy` chữ trắng; Đọc dữ liệu nền `blue-l` chữ `blue-d`; Chỉ link nền `soft-2` chữ `ink-2`; Nên kết nối nền `green-l` chữ `green-d`. Không thêm mức thứ năm bằng một màu mới.",
+        "section": "colors"
+      },
+      {
+        "name": "Quy tắc Một Họ Chữ",
+        "body": "Mọi chữ là Archivo. Không thêm họ chữ thứ hai cho tiêu đề, số hay nhãn.",
+        "section": "typography"
+      },
+      {
+        "name": "Quy tắc Tiêu Đề Chữ Hoa Navy",
+        "body": "Tiêu đề trang, tiêu đề mục, dải tên thẻ và hàng nhóm là chữ hoa, 800, giãn chữ 0.06 đến 0.07em, màu `navy`, cỡ từ 13 đến 16px. Câu văn và tên riêng không bao giờ viết hoa toàn bộ.",
+        "section": "typography"
+      },
+      {
+        "name": "Quy tắc Số Là Bảng",
+        "body": "Mọi con số tiền, đơn, phần trăm dùng `font-variant-numeric: tabular-nums` và căn phải trong cột. Số không đứng một mình: đơn vị đi liền (₫, tr, đơn) và tiêu chí hoặc trần nằm ở dòng nhỏ ngay dưới hoặc ở cột bên cạnh.",
+        "section": "typography"
+      },
+      {
+        "name": "Quy tắc Sàn 12px",
+        "body": "Không có chữ nào nhỏ hơn 12px. Chữ đọc nhỏ nhất là 12.5px; 12px chỉ dành cho chữ cái viết tắt trong ô avatar.",
+        "section": "typography"
+      },
+      {
+        "name": "Quy tắc Tấm Trên Nền",
+        "body": "Tách hai thứ bằng tông nền hoặc một nét 1px, không bằng bóng. Bóng chỉ dùng cho trạng thái (tab đang chọn, focus) hoặc cho lớp nổi thật (ngăn chat trượt).",
+        "section": "elevation"
+      },
+      {
+        "name": "Quy tắc Bán Kính Theo Cỡ",
+        "body": "Dùng đúng bậc của thang: 16px tấm, 14px bong bóng, 12px thẻ, 10px ô nhập, 9px nút, 999px viên thuốc. Không có góc vuông ở thứ người dùng nhìn thấy như một khối.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do đặt nội dung trong hai tấm bo 16px trên nền `ground`, tấm trắng để làm việc và tấm `chatbg` để trò chuyện.",
+      "Do viết tiêu đề trang và tiêu đề mục bằng chữ hoa navy 800 giãn chữ 0.06 đến 0.07em.",
+      "Do giữ chữ thân 16px và mọi chữ bằng Archivo.",
+      "Do dùng viên thuốc cho mọi nhãn trạng thái và quyền, với đúng bốn màu quyền.",
+      "Do đặt mọi khoản tiền theo thời gian lên lưới tuần với đúng chất liệu của nó: navy liền là đã chi, nhạt viền liền là đã duyệt, sọc viền đứt là kế hoạch, vàng viền đứt là chờ bạn.",
+      "Do để vàng cam chỉ cho việc chờ người dùng, và gỡ nó ngay khi việc đó được quyết.",
+      "Do kẻ vạch trần `bad` nét đứt 1.5px ở mọi nơi có cột tiền theo tuần, kèm nhãn ghi số trần.",
+      "Do giữ góc theo thang 16, 14, 12, 10, 9, 999px.",
+      "Do để mỗi nhóm nút có một nút primary navy ở cuối, các lựa chọn còn lại là ghost.",
+      "Do tôn trọng `prefers-reduced-motion`: bản dựng tắt mọi animation và transition khi người dùng yêu cầu."
+    ],
+    "donts": [
+      "Don't quay lại hướng \"tờ flight plan\" đã bị từ chối: thanh trên màu đá phiến, tờ kẻ góc vuông, Barlow hay Barlow Semi Condensed, chữ thân 14px.",
+      "Don't dùng chữ nhỏ hơn 12px hay thêm họ chữ thứ hai.",
+      "Don't dùng cam hay vàng nhạt cho nhấn mạnh, cảnh báo chung, nhãn mới hay trang trí.",
+      "Don't tô nền một khối bằng `ok` hay `bad`; ngoại lệ duy nhất là nút dừng chi khi đang dừng.",
+      "Don't dùng sọc chéo làm họa tiết trang trí; sọc chỉ có nghĩa \"kế hoạch chưa hỏi\".",
+      "Don't nâng thẻ bằng bóng đổ; tách bằng tông nền hoặc nét 1px.",
+      "Don't để một con số đứng không có đơn vị hoặc không có tiêu chí để so."
+    ]
+  }
+}

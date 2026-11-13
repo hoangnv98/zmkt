@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><title>Z.MKT · Kiểu mockup</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1eee8;--card:#fff;--navy:#1c3a6e;--ink:#1b2333;--ink2:#565e6e;--line:#e3dfd7;--lime:#bfe06a;--orange:#f2a65a;--orange-l:#fbe9d6;--ok:#2f7d4f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;font:14px/1.45 "Be Vietnam Pro",sans-serif;color:var(--ink);background:var(--bg);display:grid;grid-template-columns:1fr 400px;gap:16px;padding:20px}
+main{background:var(--card);border-radius:16px;padding:22px 26px;display:flex;flex-direction:column}
+.top{display:flex;justify-content:space-between;align-items:center}
+.brand{border:1px solid var(--line);border-radius:10px;padding:7px 12px;font-weight:600}
+.steps{background:var(--bg);border-radius:999px;padding:4px;display:flex;gap:2px;font-weight:600;font-size:13.5px}
+.steps span{padding:7px 16px;border-radius:999px;color:var(--ink)}.steps .on{background:var(--navy);color:#fff}
+h1{font-size:13px;letter-spacing:.06em;margin:22px 0 12px;display:flex;gap:10px;align-items:center}
+.pill{background:var(--orange-l);color:#9a5a12;font-size:12px;padding:3px 10px;border-radius:999px;letter-spacing:0}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.k{border:1px solid var(--line);border-radius:14px;padding:14px 16px}.k small{color:var(--ink2);font-size:12px}
+.k b{display:block;font-size:26px;margin:4px 0}.k.on{background:var(--navy);color:#fff;border-color:var(--navy)}.k.on small{color:#c5d2ea}
+.k .ok{color:var(--ok);font-size:12px}
+h2{font-size:12px;letter-spacing:.06em;color:var(--ink2);margin:18px 0 8px}
+.c{border:1px solid var(--line);border-radius:12px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.c b{font-size:15px}.c small{display:block;color:var(--ink2);font-size:12.5px}
+.c.pend{background:var(--orange-l);border:1px dashed var(--orange)}
+.btn{background:var(--lime);padding:8px 18px;border-radius:10px;font-weight:700}
+.road{margin-top:auto;border:1px solid var(--line);border-radius:12px;padding:12px 16px;display:grid;grid-template-columns:180px repeat(3,1fr);gap:10px;align-items:center}
+.road div{border-radius:8px;padding:8px 12px;background:var(--bg);font-size:12.5px}.road div b{display:block}
+.road .d{background:#e9f4d6}.road .n{background:var(--orange-l);outline:1.5px solid var(--orange)}
+.chat{display:flex;flex-direction:column;padding:6px 4px}
+.chat header{font-weight:700;font-size:16px;padding-bottom:12px;border-bottom:1px solid var(--line)}.chat header small{display:block;font-weight:400;color:var(--ink2);font-size:12px}
+.log{flex:1;display:flex;flex-direction:column;gap:10px;justify-content:flex-end;padding:14px 0}
+.m{background:#fff;border-radius:14px;padding:10px 14px;max-width:86%}.m.me{align-self:flex-end;background:#0b6fe8;color:#fff}
+.res{background:#fff;border-radius:14px;padding:12px 14px}.res p{padding:2px 0}
+.ask{background:#fff;border-radius:14px;padding:12px 14px;color:var(--ink2)}
+</style></head><body>
+<main>
+  <div class="top"><span class="brand">Gốm Lam · ví dụ ▾</span><div class="steps"><span>1 Thương hiệu</span><span>2 Thị trường</span><span class="on">3 Triển khai</span></div></div>
+  <h1>CHIẾN DỊCH <span class="pill">2 việc chờ bạn duyệt</span></h1>
+  <div class="kpis">
+    <div class="k on"><small>Đơn hàng</small><b>38</b><small>trong 2 tuần thử</small></div>
+    <div class="k"><small>Doanh thu</small><b>24,7 tr ₫</b><small>so với trước khi dùng</small></div>
+    <div class="k"><small>Đã chi</small><b>4,75 tr ₫</b><small>95% của 5 triệu</small></div>
+    <div class="k"><small>Chi phí / đơn</small><b>125.000 ₫</b><span class="ok">dưới tiêu chí 150.000 ₫</span></div>
+  </div>
+  <h2>ĐỢT CHẠY THỬ · VỪA XONG</h2>
+  <div class="c"><div><b>#1 Video quy trình vẽ</b><small>Người trẻ đô thị · Meta Ads</small></div><span style="color:var(--ok)">Đạt · nên mở rộng</span></div>
+  <div class="c"><div><b>#2 Ảnh sản phẩm dạng lật</b><small>Người trẻ đô thị · Meta Ads</small></div><span style="color:#9a5a12">Chưa đạt · sẽ dừng</span></div>
+  <h2>SẮP TỚI</h2>
+  <div class="c pend"><div><b>#3 Hộp quà Tết</b><small>Quà Tết &amp; doanh nghiệp · 15/11 đến 25/1</small></div><span class="btn">Duyệt</span></div>
+  <div class="road"><span><b>Lộ trình ngân sách</b><br><small style="color:var(--ink2)">trần 30 triệu ₫/tháng</small></span>
+    <div class="d"><b>Thử</b>5 triệu · xong</div><div class="n"><b>Mở rộng</b>15 triệu/tháng · chờ bạn</div><div><b>Tăng tốc</b>tối đa 30 triệu</div></div>
+</main>
+<aside class="chat">
+  <header>Z.MKT<small>Đang lo 2 chiến dịch · 2 việc chờ bạn</small></header>
+  <div class="log">
+    <div class="m">Mình đề xuất bắt đầu với nhóm người trẻ đô thị, chạy thử 2 tuần với 5 triệu.</div>
+    <div class="m me">Chạy thử trước đi.</div>
+    <div class="m">Chạy thử đã xong. Đây là điều mình học được:</div>
+    <div class="res"><p>Video vẽ tay ra đơn tốt: 112.000 ₫ mỗi đơn</p><p>Ảnh sản phẩm dạng lật chưa đạt</p><p>Đề xuất: tăng lên 15 triệu ₫/tháng</p></div>
+  </div>
+  <div class="ask">Kênh nào đang ra đơn tốt nhất?</div>
+</aside>
+</body></html>

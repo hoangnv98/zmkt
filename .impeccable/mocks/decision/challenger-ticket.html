@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><title>Z.MKT · Cuống phiếu duyệt chi</title>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@500;600;700;800&family=Sofia+Sans:wght@400;500;600;700&family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#14285a;--navy-l:#e4e9f4;--stock:#fff;--desk:#eef0f5;--ink:#131a2e;--ink2:#515a73;--rule:#b9c1d6;--carbon:#5b3f8f;--red:#d2232a;--orange:#f28c1a;--orange-l:#fdebd2;--orange-d:#8a4a00}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;font:14px/1.4 "Sofia Sans",sans-serif;color:var(--ink);background:var(--desk);display:grid;grid-template-columns:1fr 372px;grid-template-rows:56px 1fr}
+.cap{font:700 12px "Sofia Sans Condensed";letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+.cb{font-family:"Courier Prime",monospace;font-weight:700;color:var(--carbon);font-variant-numeric:tabular-nums}
+.top{grid-column:1/-1;background:var(--navy);color:#fff;display:flex;align-items:center;padding:0 22px;gap:20px;border-bottom:4px solid var(--red)}
+.logo{font:800 24px "Sofia Sans Condensed";letter-spacing:.04em}
+.brand{font-weight:600;padding:5px 10px;border:1px solid #5c6fa3;border-radius:2px}
+.steps{display:flex;margin-left:10px;gap:2px}
+.steps a{padding:7px 16px;font:700 14px "Sofia Sans Condensed";letter-spacing:.06em;text-transform:uppercase;color:#aeb9d6}
+.steps a.on{background:#fff;color:var(--navy);border-radius:2px}
+.top .r{margin-left:auto;display:flex;gap:14px;align-items:center;font-size:13px;color:#cfd6ea}
+.wait{background:var(--orange);color:#2b1700;font-weight:700;padding:3px 10px;border-radius:2px}
+.stop{border:1px solid #fff;padding:5px 10px;border-radius:2px;font-weight:600;color:#fff}
+main{padding:20px 24px 0;min-width:0}
+h1{font:800 26px "Sofia Sans Condensed";letter-spacing:.02em;text-transform:uppercase;display:inline-block}
+.sub{color:var(--ink2);margin-left:12px}
+.book{margin-top:14px;display:grid;grid-template-columns:1fr 1fr 1fr 250px;background:var(--stock);border:1px solid var(--rule)}
+.cp{padding:12px 16px 14px;border-right:2px dashed var(--rule);position:relative}
+.cp h3{font:800 22px "Sofia Sans Condensed";text-transform:uppercase;letter-spacing:.03em;margin-top:2px}
+.cp .amt{font-size:30px;line-height:1.1;margin:6px 0 2px}
+.cp .box{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--rule);margin-top:10px}
+.cp .box>div{padding:5px 8px;border-right:1px solid var(--rule)}.cp .box>div:last-child{border:0}
+.cp .box b{display:block;font-size:15px}
+.stamp{position:absolute;right:14px;top:14px;font:800 15px "Sofia Sans Condensed";letter-spacing:.1em;padding:4px 10px;border:2.5px solid currentColor;border-radius:3px;transform:rotate(-7deg);text-transform:uppercase}
+.stamp.used{color:var(--navy)}
+.cp.now{background:var(--orange-l);outline:2px solid var(--orange);outline-offset:-2px}
+.cp.now .acts{display:flex;gap:6px;margin-top:10px}
+.cp.later{color:var(--ink2)}.cp.later .amt{color:#6f5c9c}
+.stub{padding:12px 16px;background:var(--navy-l)}
+.stub .amt{font-size:26px;display:block;margin:4px 0}
+.stub .m{height:8px;background:#fff;border:1px solid var(--navy);margin:8px 0 4px}.stub .m i{display:block;height:100%;width:16%;background:var(--navy)}
+.btn{font:700 13.5px "Sofia Sans";padding:7px 12px;border-radius:2px;border:1.5px solid var(--navy);background:var(--navy);color:#fff}.btn.g{background:#fff;color:var(--navy)}
+h2{font:800 15px "Sofia Sans Condensed";letter-spacing:.08em;text-transform:uppercase;margin:22px 0 8px;display:flex;justify-content:space-between;align-items:baseline}
+h2 span{font:400 13px "Sofia Sans";text-transform:none;letter-spacing:0;color:var(--ink2)}
+.rows{background:var(--stock);border:1px solid var(--rule)}
+.row{display:grid;grid-template-columns:56px 1fr 96px 120px 150px 170px 90px;border-bottom:1px solid var(--rule);align-items:stretch}
+.row:last-child{border:0}
+.row>div{padding:9px 12px;border-right:1px solid var(--rule)}.row>div:last-child{border:0;display:grid;place-items:center}
+.row.hd>div{padding:5px 12px;background:var(--navy-l)}
+.row .no{font:800 22px "Sofia Sans Condensed";color:var(--navy)}
+.row b{font-size:15px}.row small{display:block;color:var(--ink2);font-size:12.5px}
+.row .v{font-size:18px;text-align:right}
+.row .st{position:relative}
+.row .stamp{position:static;display:inline-block;font-size:12.5px;transform:rotate(-3deg);margin-top:4px}
+.stamp.ok{color:#17734a}.stamp.void{color:var(--red)}
+.row.pend{background:var(--orange-l)}.row.pend>div{border-color:#f2c88f}
+.days{margin-top:14px;background:var(--stock);border:1px solid var(--rule);display:grid;grid-template-columns:150px repeat(14,1fr)}
+.days>div{padding:5px 0;text-align:center;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);font-size:12px}
+.days .l{text-align:left;padding-left:12px}.days .cb{font-size:15px}
+.chat{background:#fff;border-left:1px solid var(--rule);display:flex;flex-direction:column;padding:16px 16px 14px}
+.chat header{font:800 18px "Sofia Sans Condensed";letter-spacing:.04em;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.chat header small{display:block;font:400 12.5px "Sofia Sans";letter-spacing:0;color:var(--ink2)}
+.log{flex:1;display:flex;flex-direction:column;gap:9px;justify-content:flex-end;padding:12px 0}
+.m{max-width:90%;padding:8px 11px;background:var(--desk);border-radius:2px}
+.m.me{align-self:flex-end;background:var(--navy);color:#fff}
+.sep{text-align:center;font-size:12px;color:var(--ink2)}
+.res{border:1px dashed var(--rule);padding:9px 11px}.res p{padding:2px 0}
+.ask{border:1.5px solid var(--navy);padding:9px 11px;display:flex;justify-content:space-between;color:var(--ink2);border-radius:2px}
+.ask b{background:var(--navy);color:#fff;padding:0 10px;font-weight:600}
+</style></head><body>
+<div class="top"><span class="logo">Z.MKT</span><span class="brand">Gốm Lam · ví dụ ▾</span>
+  <nav class="steps"><a>1 Thương hiệu</a><a>2 Thị trường</a><a class="on">3 Triển khai</a></nav>
+  <div class="r"><span class="wait">2 việc chờ bạn quyết</span><span>Meta Ads · cập nhật 14:00</span><span class="stop">Dừng mọi chi tiêu</span></div></div>
+<main>
+  <h1>Triển khai</h1><span class="sub">Người trẻ đô thị · chạy thử 5/10 đến 18/10 đã xong</span>
+  <div class="book">
+    <div class="cp"><span class="cap">Liên 1 · đã dùng</span><h3>Thử</h3><div class="cb amt">4.750.000 đ</div><span class="cap">đã chi trên 5.000.000 đ · 2 tuần</span>
+      <span class="stamp used">Đã xong 18/10</span>
+      <div class="box"><div><span class="cap">Đơn</span><b class="cb">38</b></div><div><span class="cap">Chi phí / đơn</span><b class="cb">125.000</b></div></div></div>
+    <div class="cp now"><span class="cap" style="color:var(--orange-d)">Liên 2 · chờ bạn quyết</span><h3>Mở rộng</h3><div class="cb amt">15.000.000 đ</div><span class="cap">mỗi tháng · dồn vào video vẽ tay</span>
+      <div class="acts"><span class="btn">Duyệt 15 tr/tháng</span><span class="btn g">Thử thêm 2 tuần</span><span class="btn g">Dừng</span></div></div>
+    <div class="cp later"><span class="cap">Liên 3 · chưa mở</span><h3>Tăng tốc</h3><div class="cb amt">30.000.000 đ</div><span class="cap">tối đa mỗi tháng · khi liên 2 đạt tiêu chí</span>
+      <div class="box"><div><span class="cap">Tiêu chí</span><b>dưới 150.000 đ/đơn</b></div><div><span class="cap">Mục tiêu</span><b>120 đơn/tháng</b></div></div></div>
+    <div class="stub"><span class="cap">Cuống giữ lại · trần tháng 10</span><span class="cb amt">30.000.000 đ</span>
+      <div class="m"><i></i></div><span class="cap">đã chi 4.750.000 · còn 25.250.000</span></div>
+  </div>
+  <h2>Chiến dịch <span>Mỗi chiến dịch trả lời một câu hỏi. Dừng thì đóng dấu, không xoá.</span></h2>
+  <div class="rows">
+    <div class="row hd"><div class="cap">Số</div><div class="cap">Chiến dịch</div><div class="cap">Đơn</div><div class="cap">Đã chi</div><div class="cap">Chi phí / đơn</div><div class="cap">Kết luận</div><div></div></div>
+    <div class="row"><div class="no">01</div><div><b>Video quy trình vẽ</b><small>Video vẽ tay có ra đơn dưới 150.000 đ không? · 11/13 việc xong</small></div><div class="cb v">26</div><div class="cb v">2.900.000</div><div class="cb v">112.000</div><div class="st"><span class="stamp ok">Đạt · mở rộng</span></div><div><span class="btn g">Xem</span></div></div>
+    <div class="row"><div class="no">02</div><div><b>Ảnh sản phẩm dạng lật</b><small>Ảnh sản phẩm có ra đơn dưới 150.000 đ không? · 8/8 việc xong</small></div><div class="cb v">12</div><div class="cb v">1.850.000</div><div class="cb v">154.000</div><div class="st"><span class="stamp void">Chưa đạt · dừng</span></div><div><span class="btn g">Xem</span></div></div>
+    <div class="row pend"><div class="no">03</div><div><b>Hộp quà Tết</b><small>Quà Tết &amp; doanh nghiệp · 15/11 đến 25/1 · chiến lược mới</small></div><div class="cb v">–</div><div class="cb v">+10 tr/tháng</div><div class="cb v">180.000</div><div><b style="color:var(--orange-d)">Chờ bạn duyệt</b></div><div><span class="btn">Duyệt</span></div></div>
+  </div>
+  <div class="days">
+    <div class="l cap">Ngày</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div>
+    <div class="l cap">Đơn</div><div class="cb">0</div><div class="cb">1</div><div class="cb">1</div><div class="cb">2</div><div class="cb">2</div><div class="cb">3</div><div class="cb">2</div><div class="cb">3</div><div class="cb">3</div><div class="cb">4</div><div class="cb">3</div><div class="cb">4</div><div class="cb">5</div><div class="cb">5</div>
+    <div class="l cap">Đã chi (nghìn)</div><div class="cb">250</div><div class="cb">280</div><div class="cb">300</div><div class="cb">320</div><div class="cb">330</div><div class="cb">340</div><div class="cb">340</div><div class="cb">350</div><div class="cb">360</div><div class="cb">360</div><div class="cb">370</div><div class="cb">380</div><div class="cb">385</div><div class="cb">385</div>
+  </div>
+</main>
+<aside class="chat">
+  <header>Z.MKT<small>Đang lo 2 chiến dịch · 2 việc chờ bạn</small></header>
+  <div class="log">
+    <div class="m">Mình đề xuất bắt đầu với nhóm người trẻ đô thị, chạy thử 2 tuần với 5 triệu để biết cái gì ra đơn.</div>
+    <div class="m me">Chạy thử trước đi.</div>
+    <div class="m">Đã duyệt. Mình bắt đầu chạy thử 2 tuần với 5 triệu đ trên Meta Ads.</div>
+    <div class="sep">2 tuần sau · Chủ nhật 18/10</div>
+    <div class="m">Chạy thử đã xong. Đây là điều mình học được:</div>
+    <div class="res"><span class="cap">Kết quả chạy thử · 2 tuần</span><p>Video vẽ tay ra đơn tốt: 112.000 đ mỗi đơn</p><p>Ảnh sản phẩm dạng lật chưa đạt: 154.000 đ mỗi đơn</p><p>Đề xuất: tăng lên 15 triệu đ/tháng, dồn vào video</p></div>
+  </div>
+  <div class="ask"><span>Kênh nào đang ra đơn tốt nhất?</span><b>Gửi</b></div>
+</aside>
+</body></html>

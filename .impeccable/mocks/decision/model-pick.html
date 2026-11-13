@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><title>Z.MKT · Bảng kế hoạch media</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--slate:#1d2733;--slate2:#2b3848;--white:#fff;--grid:#e9edf2;--line:#cfd6df;--ink:#17202b;--ink2:#566273;--blue:#2c6fdb;--blue-l:#dce8fb;--grey:#66727f;--orange:#f28c1a;--orange-l:#fdebd2;--orange-d:#8a4a00;--ok:#16794c}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;font:14px/1.4 Barlow,sans-serif;color:var(--ink);background:var(--grid);display:grid;grid-template-columns:1fr 372px;grid-template-rows:52px 1fr}
+.sc{font-family:"Barlow Semi Condensed",sans-serif}
+.top{grid-column:1/-1;background:var(--slate);color:#fff;display:flex;align-items:center;padding:0 20px;gap:22px}
+.logo{font:700 20px "Barlow Semi Condensed";letter-spacing:.01em}
+.brand{padding:5px 10px;background:var(--slate2);border-radius:3px;font-weight:600;font-size:13.5px}
+.steps{display:flex;height:100%;margin-left:12px}
+.steps a{display:flex;align-items:center;gap:8px;padding:0 18px;color:#aab8c8;font-weight:600;border-bottom:3px solid transparent;border-top:3px solid transparent}
+.steps a b{font:700 13px "Barlow Semi Condensed";border:1.5px solid currentColor;width:20px;height:20px;border-radius:50%;display:grid;place-items:center}
+.steps a.on{color:#fff;border-bottom-color:var(--blue)}
+.top .r{margin-left:auto;display:flex;gap:16px;align-items:center;font-size:13px;color:#c4cfdb}
+.top .wait{background:var(--orange);color:#2b1700;font-weight:700;padding:3px 10px;border-radius:2px}
+.top .stop{border:1px solid #6b7c90;color:#fff;padding:5px 10px;border-radius:3px;font-weight:600}
+main{padding:18px 22px 0;min-width:0;display:flex;flex-direction:column}
+.bar{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+h1{font:700 24px "Barlow Semi Condensed"}
+.tabs{display:flex;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:#fff;font-weight:600;font-size:13px}
+.tabs span{padding:5px 12px;color:var(--ink2)}.tabs .on{background:var(--slate);color:#fff}
+.bar .kpi{margin-left:auto;display:flex;gap:22px;font-size:12.5px;color:var(--ink2)}
+.kpi b{display:block;font:700 20px "Barlow Semi Condensed";color:var(--ink);font-variant-numeric:tabular-nums}
+.kpi .ok b{color:var(--ok)}
+.plan{background:#fff;border:1px solid var(--line);display:grid;grid-template-columns:300px repeat(8,1fr) 92px 92px 104px;font-size:13px}
+.plan>div{border-bottom:1px solid var(--grid);border-right:1px solid var(--grid);min-height:54px;padding:8px 10px}
+.plan .h{min-height:0;padding:6px 10px;font:600 12px "Barlow Semi Condensed";color:var(--ink2);border-bottom:1.5px solid var(--ink);text-align:center;background:#f6f8fa}
+.plan .h.l{text-align:left}.plan .h.now{background:var(--blue-l);color:var(--blue)}
+.plan .h small{display:block;font-weight:500}
+.name b{font-weight:700;font-size:14px}.name small{display:block;color:var(--ink2)}
+.name i{font:700 13px "Barlow Semi Condensed";color:var(--ink2);font-style:normal;margin-right:6px}
+.n{text-align:right;font:600 15px "Barlow Semi Condensed";font-variant-numeric:tabular-nums;align-self:stretch}
+.n small{display:block;font:500 12px Barlow;color:var(--ink2)}.n.ok{color:var(--ok)}.n.bad{color:#9a2a2a}
+.flight{padding:12px 0!important;position:relative}
+.f{height:28px;display:flex;align-items:center;padding:0 10px;font:600 12.5px "Barlow Semi Condensed";color:#fff;white-space:nowrap;border-radius:2px}
+.f.done{background:var(--blue)}.f.stopd{background:var(--grey)}
+.f.next{background:repeating-linear-gradient(135deg,var(--blue-l) 0 6px,#fff 6px 12px);color:var(--blue);border:1.5px dashed var(--blue)}
+.f.pend{background:var(--orange-l);color:var(--orange-d);border:1.5px solid var(--orange)}
+.grp{grid-column:1/-1;min-height:0!important;padding:5px 10px!important;background:#f6f8fa;font:600 12px "Barlow Semi Condensed";color:var(--ink2);letter-spacing:.02em}
+.capline{grid-column:1/-1;min-height:0!important;padding:0!important;border:0!important;position:relative;height:0}
+.bud{background:#fff;border:1px solid var(--line);border-top:0;display:grid;grid-template-columns:300px repeat(8,1fr) 288px;font-size:12.5px}
+.bud>div{padding:8px 10px;border-right:1px solid var(--grid)}
+.bud .col{display:flex;flex-direction:column;justify-content:flex-end;height:74px;padding:6px 8px;position:relative}
+.bud .col i{display:block;background:var(--blue)}.bud .col i.pl{background:var(--blue-l);border:1px dashed var(--blue)}
+.bud .col span{font:600 12px "Barlow Semi Condensed";color:var(--ink2);text-align:center}
+.bud .cap{position:absolute;left:0;right:0;top:10px;border-top:1.5px dashed #9a2a2a}
+.decide{margin-top:14px;background:var(--orange-l);border:1.5px solid var(--orange);padding:12px 14px;display:flex;align-items:center;gap:10px}
+.decide p{flex:1;font-weight:600;font-size:15px}.decide small{display:block;font-weight:400;font-size:13px;color:var(--orange-d)}
+.btn{font:600 13.5px Barlow;padding:7px 14px;border-radius:3px;border:1.5px solid var(--slate);background:var(--slate);color:#fff}.btn.g{background:#fff;color:var(--slate)}
+.chat{background:#fff;border-left:1px solid var(--line);display:flex;flex-direction:column;padding:16px 16px 14px}
+.chat header{font:700 16px "Barlow Semi Condensed";padding-bottom:10px;border-bottom:1px solid var(--line)}
+.chat header small{display:block;font:400 12.5px Barlow;color:var(--ink2)}
+.log{flex:1;display:flex;flex-direction:column;gap:9px;justify-content:flex-end;padding:12px 0}
+.m{max-width:90%;padding:8px 11px;background:var(--grid);border-radius:3px}
+.m.me{align-self:flex-end;background:var(--blue);color:#fff}
+.sep{text-align:center;font-size:12px;color:var(--ink2)}
+.res{border:1px solid var(--line);padding:9px 11px}
+.res b{display:block;font:600 12px "Barlow Semi Condensed";color:var(--ink2);margin-bottom:3px}
+.res p{padding:2px 0}
+.ask{border:1.5px solid var(--slate);padding:9px 11px;display:flex;justify-content:space-between;color:var(--ink2);border-radius:3px}
+.ask b{background:var(--slate);color:#fff;padding:0 10px;border-radius:2px;font-weight:600}
+</style></head><body>
+<div class="top"><span class="logo">Z.MKT</span><span class="brand">Gốm Lam · ví dụ ▾</span>
+  <nav class="steps"><a><b>1</b>Thương hiệu</a><a><b>2</b>Thị trường</a><a class="on"><b>3</b>Triển khai</a></nav>
+  <div class="r"><span class="wait">2 việc chờ bạn quyết</span><span>Đã chi 4,75 / trần 30 tr tháng 10</span><span class="stop">Dừng mọi chi tiêu</span></div></div>
+<main>
+  <div class="bar"><h1>Kế hoạch chiến dịch</h1><div class="tabs"><span class="on">Theo tuần</span><span>Danh sách</span><span>Nội dung</span></div>
+    <div class="kpi"><span><b>38</b>đơn chạy thử</span><span><b>4,75 tr ₫</b>đã chi / 5 tr</span><span class="ok"><b>125.000 ₫</b>mỗi đơn · tiêu chí 150.000</span></div></div>
+  <div class="plan">
+    <div class="h l">Chiến dịch · Meta Ads</div>
+    <div class="h">T41<small>5/10</small></div><div class="h">T42<small>12/10</small></div><div class="h now">T43<small>19/10</small></div><div class="h">T44<small>26/10</small></div><div class="h">T45<small>2/11</small></div><div class="h">T46<small>9/11</small></div><div class="h">T47<small>16/11</small></div><div class="h">T48<small>23/11</small></div>
+    <div class="h">Đơn</div><div class="h">Đã chi</div><div class="h">Chi phí / đơn</div>
+    <div class="grp">NGƯỜI TRẺ ĐÔ THỊ · chạy thử 5 triệu ₫ đã xong</div>
+    <div class="name"><i>#1</i><b>Video quy trình vẽ</b><small>Đạt · đề xuất mở rộng 15 tr/tháng</small></div>
+    <div class="flight" style="grid-column:span 2"><div class="f done">Chạy thử · 2,9 tr</div></div>
+    <div class="flight" style="grid-column:span 6"><div class="f next">Mở rộng · 15 tr/tháng · chờ bạn quyết</div></div>
+    <div class="n">26</div><div class="n">2,90 tr</div><div class="n ok">112.000 ₫<small>dưới tiêu chí</small></div>
+    <div class="name"><i>#2</i><b>Ảnh sản phẩm dạng lật</b><small>Chưa đạt · sẽ dừng sau khi bạn quyết</small></div>
+    <div class="flight" style="grid-column:span 2"><div class="f stopd">Chạy thử · 1,85 tr</div></div>
+    <div style="grid-column:span 6"></div>
+    <div class="n">12</div><div class="n">1,85 tr</div><div class="n bad">154.000 ₫<small>trên tiêu chí</small></div>
+    <div class="grp">QUÀ TẾT &amp; DOANH NGHIỆP · chiến lược mới, đề xuất 1/11</div>
+    <div class="name"><i>#3</i><b>Hộp quà Tết</b><small>15/11 đến 25/1 · +10 tr/tháng</small></div>
+    <div style="grid-column:span 6"></div>
+    <div class="flight" style="grid-column:span 2"><div class="f pend">Chờ bạn duyệt →</div></div>
+    <div class="n">–</div><div class="n">–</div><div class="n">180.000 ₫<small>tiêu chí</small></div>
+  </div>
+  <div class="bud">
+    <div><b>Ngân sách theo tuần</b><br><span style="color:var(--ink2)">Vạch đỏ đứt là trần 30 triệu ₫/tháng, tức 7,5 tr mỗi tuần</span></div>
+    <div class="col"><div class="cap"></div><i style="height:16px"></i><span>2,2 tr</span></div>
+    <div class="col"><div class="cap"></div><i style="height:19px"></i><span>2,55 tr</span></div>
+    <div class="col"><div class="cap"></div><i class="pl" style="height:28px"></i><span>3,75 tr</span></div>
+    <div class="col"><div class="cap"></div><i class="pl" style="height:28px"></i><span>3,75 tr</span></div>
+    <div class="col"><div class="cap"></div><i class="pl" style="height:28px"></i><span>3,75 tr</span></div>
+    <div class="col"><div class="cap"></div><i class="pl" style="height:28px"></i><span>3,75 tr</span></div>
+    <div class="col"><div class="cap"></div><i class="pl" style="height:46px"></i><span>6,25 tr</span></div>
+    <div class="col"><div class="cap"></div><i class="pl" style="height:46px"></i><span>6,25 tr</span></div>
+    <div style="color:var(--ink2)">Thanh đậm là tiền đã chi. Thanh nhạt là kế hoạch, chỉ chạy sau khi bạn duyệt.</div>
+  </div>
+  <div class="decide"><p>Mở rộng “Video quy trình vẽ” lên 15 triệu ₫ mỗi tháng?<small>Vẫn trong trần 30 triệu. Ảnh sản phẩm dừng, tiền dồn sang video.</small></p>
+    <span class="btn g">Dừng hẳn</span><span class="btn g">Thử thêm 2 tuần · 5 tr</span><span class="btn">Tăng lên 15 tr/tháng</span></div>
+</main>
+<aside class="chat">
+  <header>Z.MKT<small>Đang lo 2 chiến dịch · 2 việc chờ bạn</small></header>
+  <div class="log">
+    <div class="m">Mình đề xuất bắt đầu với nhóm người trẻ đô thị, chạy thử 2 tuần với 5 triệu để biết cái gì ra đơn.</div>
+    <div class="m me">Chạy thử trước đi.</div>
+    <div class="m">Đã duyệt. Mình bắt đầu chạy thử 2 tuần với 5 triệu ₫ trên Meta Ads.</div>
+    <div class="sep">2 tuần sau · Chủ nhật 18/10</div>
+    <div class="m">Chạy thử đã xong. Đây là điều mình học được:</div>
+    <div class="res"><b>KẾT QUẢ CHẠY THỬ · 2 TUẦN</b><p>Video vẽ tay ra đơn tốt: 112.000 ₫ mỗi đơn</p><p>Ảnh sản phẩm dạng lật chưa đạt: 154.000 ₫ mỗi đơn</p><p>Đề xuất: tăng lên 15 triệu ₫/tháng, dồn vào video</p></div>
+  </div>
+  <div class="ask"><span>Kênh nào đang ra đơn tốt nhất?</span><b>Gửi</b></div>
+</aside>
+</body></html>

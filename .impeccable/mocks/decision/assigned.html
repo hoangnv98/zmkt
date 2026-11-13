@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><title>Z.MKT · Tờ lịch block</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#0d5a43;--green-d:#083c2d;--green-l:#dcebe3;--paper:#f4f6f2;--white:#fff;--ink:#15211c;--ink2:#4d5d55;--rule:#c9d3cc;--blue:#1f3f8f;--orange:#f28c1a;--orange-l:#fdebd2;--orange-d:#8a4a00}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;font:14px/1.45 "Be Vietnam Pro",sans-serif;color:var(--ink);background:var(--paper);display:grid;grid-template-columns:216px 1fr 372px}
+.num{font-family:Archivo,sans-serif;font-stretch:88%;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+/* rail */
+.rail{background:var(--green);color:#e6f1eb;padding:20px 16px;display:flex;flex-direction:column}
+.logo{font:800 22px Archivo;font-stretch:110%;letter-spacing:-.01em;color:#fff}
+.brand{margin-top:20px;padding:10px 12px;background:var(--green-d);border-radius:3px;display:flex;justify-content:space-between;align-items:center;font-weight:600}
+.brand small{display:block;font-weight:400;color:#a8cbbb;font-size:12px}
+.steps{margin-top:24px;list-style:none}
+.steps>li{padding:9px 10px;display:flex;gap:10px;align-items:baseline;color:#b9d6c9;font-weight:500;border-radius:3px}
+.steps>li b{font:800 15px Archivo;width:14px;color:#cfe5da}
+.steps>li.on{background:#fff;color:var(--green-d);font-weight:700}
+.steps>li.on b{color:var(--green)}
+.sub{list-style:none;margin:4px 0 8px 34px;font-size:13px;color:#b9d6c9}
+.sub li{padding:4px 0}.sub .cur{color:#fff;font-weight:600}
+.cap{margin-top:auto;border-top:1px solid #2f7a61;padding-top:14px;font-size:12px;color:#b9d6c9}
+.cap .num{display:block;font-size:26px;color:#fff;line-height:1.1;margin:2px 0 8px}
+.meter{height:6px;background:var(--green-d)}.meter i{display:block;height:6px;width:16%;background:#9fd9bf}
+.stop{margin-top:14px;width:100%;padding:9px;border:1px solid #9fd9bf;background:none;color:#fff;font:600 13px "Be Vietnam Pro";border-radius:3px}
+/* main */
+main{padding:22px 28px 0;display:flex;flex-direction:column;min-width:0}
+.head{display:flex;align-items:baseline;gap:14px}
+h1{font:800 26px Archivo;font-stretch:96%;letter-spacing:-.02em}
+.wait{background:var(--orange);color:#2b1700;font-weight:700;font-size:12.5px;padding:3px 10px;border-radius:2px}
+.head .right{margin-left:auto;color:var(--ink2);font-size:13px}
+h2{font:700 13px "Be Vietnam Pro";color:var(--ink2);margin:22px 0 8px;display:flex;justify-content:space-between}
+h2 span{font-weight:400}
+.run{display:grid;grid-template-columns:1fr 236px;gap:20px;align-items:stretch}
+.leaves{display:grid;grid-template-columns:repeat(14,1fr);gap:4px}
+.leaf{background:#fff;border:1px solid var(--rule);border-top:5px solid var(--green);padding:6px 0 6px;text-align:center;position:relative}
+.leaf .wd{font-size:12px;font-weight:600;color:var(--ink2)}
+.leaf .num{display:block;font-size:40px;line-height:1.05;color:var(--green)}
+.leaf .sp{font-size:12px;color:var(--ink2);font-variant-numeric:tabular-nums}
+.leaf .dt{position:absolute;right:4px;top:0;font-size:12px;color:var(--ink2)}
+.leaf.sun{border-top-color:var(--blue)}.leaf.sun .num{color:var(--blue)}
+.leaf.zero .num{color:#6f7d75}
+.leaf.last{background:var(--green);border-color:var(--green)}.leaf.last .num,.leaf.last .wd,.leaf.last .sp{color:#fff}
+.sum{background:#fff;border:1px solid var(--rule);padding:10px 14px;display:grid;grid-template-columns:auto 1fr;column-gap:12px;align-items:baseline}
+.sum .big{font-size:52px;line-height:1;color:var(--green);grid-row:span 2}
+.sum p{font-size:12.5px;color:var(--ink2)}.sum p b{color:var(--ink);font-weight:700}
+.sum .ok{grid-column:1/-1;margin-top:6px;padding-top:6px;border-top:1px solid var(--rule);font-size:12.5px;font-weight:600;color:var(--green)}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--rule)}
+th{font-size:12px;font-weight:600;color:var(--ink2);text-align:left;padding:7px 12px;border-bottom:1.5px solid var(--ink)}
+td{padding:9px 12px;border-bottom:1px solid var(--rule);vertical-align:middle}
+td small{display:block;color:var(--ink2);font-size:12px}
+td.n,th.n{text-align:right}td.n{font:700 16px Archivo;font-variant-numeric:tabular-nums}
+.id{font:800 15px Archivo;color:var(--ink2);width:34px}
+.mark{display:inline-block;font:800 12px Archivo;letter-spacing:.06em;padding:3px 8px;border:1.5px solid currentColor;border-radius:2px;transform:rotate(-2deg)}
+.mark.ok{color:var(--green)}.mark.no{color:#6b7770}.mark.run{color:var(--blue);transform:none}
+tr.pend td{background:var(--orange-l);border-bottom-color:#f2c88f}
+.btn{font:700 13px "Be Vietnam Pro";padding:7px 14px;border-radius:3px;border:1.5px solid var(--green);background:var(--green);color:#fff}
+.btn.ghost{background:#fff;color:var(--green)}
+.decide{margin-top:14px;background:var(--orange-l);border:1.5px solid var(--orange);padding:12px 14px;display:flex;align-items:center;gap:12px}
+.decide p{flex:1;font-weight:600}.decide p small{display:block;font-weight:400;color:var(--orange-d);font-size:12.5px}
+.road{margin-top:14px;display:grid;grid-template-columns:150px repeat(3,1fr);border:1px solid var(--rule);background:#fff;font-size:12.5px}
+.road>div{padding:9px 12px;border-right:1px solid var(--rule)}.road>div:last-child{border:0}
+.road b{display:block;font:800 17px Archivo}.road .done b{color:var(--green)}.road .now{background:var(--orange-l)}.road .now b{color:var(--orange-d)}.road .later{color:var(--ink2)}
+/* chat */
+.chat{background:#fff;border-left:1px solid var(--rule);display:flex;flex-direction:column;padding:18px 18px 16px}
+.chat header{font-weight:700;padding-bottom:12px;border-bottom:1px solid var(--rule)}
+.chat header small{display:block;font-weight:400;color:var(--ink2);font-size:12px}
+.log{flex:1;display:flex;flex-direction:column;gap:10px;justify-content:flex-end;padding:14px 0;font-size:13.5px}
+.m{max-width:88%;padding:9px 12px;background:var(--paper);border-radius:2px 10px 10px 10px}
+.m.me{align-self:flex-end;background:var(--green);color:#fff;border-radius:10px 2px 10px 10px}
+.sep{text-align:center;font-size:12px;color:var(--ink2)}
+.res{border:1px solid var(--rule);padding:10px 12px;max-width:94%}
+.res b.t{font-size:12px;color:var(--ink2);display:block;margin-bottom:4px}
+.res li{list-style:none;padding:2px 0 2px 16px;position:relative}
+.res li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;background:var(--green)}
+.res li.x::before{background:none;border:1.5px solid #6b7770}.res li.q::before{background:var(--orange)}
+.ask{border:1.5px solid var(--ink);padding:10px 12px;display:flex;justify-content:space-between;color:var(--ink2);border-radius:3px}
+.ask b{background:var(--green);color:#fff;padding:0 10px;border-radius:2px;font-weight:600}
+</style></head><body>
+<nav class="rail">
+  <div class="logo">Z.MKT</div>
+  <div class="brand"><span>Gốm Lam<small>ví dụ</small></span><span>▾</span></div>
+  <ol class="steps">
+    <li><b>1</b>Thương hiệu</li>
+    <li><b>2</b>Thị trường</li>
+    <li class="on"><b>3</b>Triển khai</li>
+  </ol>
+  <ul class="sub"><li class="cur">Tất cả chiến dịch</li><li>Thư viện nội dung</li><li>Sổ chi tiêu</li></ul>
+  <div class="cap">Trần ngân sách tháng 10<span class="num">4,75 / 30 tr</span><div class="meter"><i></i></div>
+    <button class="stop">Dừng mọi chi tiêu</button></div>
+</nav>
+<main>
+  <div class="head"><h1>Triển khai</h1><span class="wait">2 việc chờ bạn quyết</span><span class="right">Meta Ads · cập nhật 14:00 hôm nay</span></div>
+  <h2>Đợt chạy thử vừa xong <span>5/10 đến 18/10 · ngân sách 5 triệu ₫ · số to là đơn, số nhỏ là tiền đã chi</span></h2>
+  <div class="run">
+    <div class="leaves">
+      <div class="leaf zero"><i class="dt">5</i><div class="wd">T2</div><span class="num">0</span><div class="sp">250k</div></div>
+      <div class="leaf"><i class="dt">6</i><div class="wd">T3</div><span class="num">1</span><div class="sp">280k</div></div>
+      <div class="leaf"><i class="dt">7</i><div class="wd">T4</div><span class="num">1</span><div class="sp">300k</div></div>
+      <div class="leaf"><i class="dt">8</i><div class="wd">T5</div><span class="num">2</span><div class="sp">320k</div></div>
+      <div class="leaf"><i class="dt">9</i><div class="wd">T6</div><span class="num">2</span><div class="sp">330k</div></div>
+      <div class="leaf"><i class="dt">10</i><div class="wd">T7</div><span class="num">3</span><div class="sp">340k</div></div>
+      <div class="leaf sun"><i class="dt">11</i><div class="wd">CN</div><span class="num">2</span><div class="sp">340k</div></div>
+      <div class="leaf"><i class="dt">12</i><div class="wd">T2</div><span class="num">3</span><div class="sp">350k</div></div>
+      <div class="leaf"><i class="dt">13</i><div class="wd">T3</div><span class="num">3</span><div class="sp">360k</div></div>
+      <div class="leaf"><i class="dt">14</i><div class="wd">T4</div><span class="num">4</span><div class="sp">360k</div></div>
+      <div class="leaf"><i class="dt">15</i><div class="wd">T5</div><span class="num">3</span><div class="sp">370k</div></div>
+      <div class="leaf"><i class="dt">16</i><div class="wd">T6</div><span class="num">4</span><div class="sp">380k</div></div>
+      <div class="leaf"><i class="dt">17</i><div class="wd">T7</div><span class="num">5</span><div class="sp">385k</div></div>
+      <div class="leaf last"><div class="wd">CN 18</div><span class="num">5</span><div class="sp">385k</div></div>
+    </div>
+    <div class="sum"><span class="num big">38</span><p><b>đơn</b> trong 14 ngày</p><p>đã chi <b>4,75 tr ₫</b> · 95% của 5 triệu</p>
+      <div class="ok">125.000 ₫ mỗi đơn · dưới tiêu chí 150.000 ₫</div></div>
+  </div>
+  <h2>Chiến dịch</h2>
+  <table>
+    <tr><th></th><th>Chiến dịch</th><th class="n">Đơn</th><th class="n">Đã chi</th><th class="n">Chi phí / đơn</th><th>Kết luận</th><th></th></tr>
+    <tr><td class="id">#1</td><td><b>Video quy trình vẽ</b><small>Người trẻ đô thị · Meta Ads · 11/13 việc xong</small></td><td class="n">26</td><td class="n">2,90 tr</td><td class="n">112.000 ₫</td><td><span class="mark ok">ĐẠT</span></td><td><button class="btn ghost">Xem</button></td></tr>
+    <tr><td class="id">#2</td><td><b>Ảnh sản phẩm dạng lật</b><small>Người trẻ đô thị · Meta Ads · 8/8 việc xong</small></td><td class="n">12</td><td class="n">1,85 tr</td><td class="n">154.000 ₫</td><td><span class="mark no">CHƯA ĐẠT · SẼ DỪNG</span></td><td><button class="btn ghost">Xem</button></td></tr>
+    <tr class="pend"><td class="id">#3</td><td><b>Hộp quà Tết</b><small>Quà Tết &amp; doanh nghiệp · 15/11 đến 25/1 · chiến lược mới</small></td><td class="n">–</td><td class="n">+10 tr/tháng</td><td class="n">tiêu chí 180.000 ₫</td><td>Chờ bạn duyệt</td><td><button class="btn">Duyệt</button></td></tr>
+  </table>
+  <div class="decide"><p>Video vẽ tay đang ra đơn tốt. Tăng ngân sách lên 15 triệu ₫ mỗi tháng?<small>Vẫn trong trần 30 triệu. Ảnh sản phẩm sẽ dừng, tiền dồn sang video.</small></p>
+    <button class="btn ghost">Dừng hẳn</button><button class="btn ghost">Thử thêm 2 tuần · 5 tr</button><button class="btn">Tăng lên 15 tr/tháng</button></div>
+  <div class="road"><div><b style="font:700 13px 'Be Vietnam Pro'">Lộ trình ngân sách</b>trần 30 triệu ₫/tháng</div>
+    <div class="done"><b>Thử · 5 tr</b>2 tuần · đã xong</div><div class="now"><b>Mở rộng · 15 tr/tháng</b>chờ bạn quyết</div><div class="later"><b>Tăng tốc · tối đa 30 tr</b>khi mở rộng đạt tiêu chí</div></div>
+</main>
+<aside class="chat">
+  <header>Z.MKT<small>Đang lo 2 chiến dịch · 2 việc chờ bạn</small></header>
+  <div class="log">
+    <div class="m">Mình đề xuất bắt đầu với nhóm người trẻ đô thị, chạy thử 2 tuần với 5 triệu để biết cái gì ra đơn.</div>
+    <div class="m me">Chạy thử trước đi.</div>
+    <div class="m">Đã duyệt. Mình bắt đầu chạy thử 2 tuần với 5 triệu ₫ trên Meta Ads.</div>
+    <div class="sep">2 tuần sau · Chủ nhật 18/10</div>
+    <div class="m">Chạy thử đã xong. Đây là điều mình học được:</div>
+    <div class="res"><b class="t">Kết quả chạy thử · 2 tuần</b><ul>
+      <li>Video vẽ tay ra đơn tốt: 112.000 ₫ mỗi đơn</li>
+      <li class="x">Ảnh sản phẩm dạng lật chưa đạt: 154.000 ₫ mỗi đơn</li>
+      <li class="q">Đề xuất: tăng lên 15 triệu ₫/tháng, dồn vào video</li></ul></div>
+  </div>
+  <div class="ask"><span>Kênh nào đang ra đơn tốt nhất?</span><b>Gửi</b></div>
+</aside>
+</body></html>
