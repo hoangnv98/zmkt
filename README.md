@@ -1,5 +1,7 @@
 # Z.MKT (bản thử chạy local)
 
+Trên macOS hoặc Linux (Windows xem mục bên dưới):
+
 ```bash
 npm install
 cp .env.example .env.local   # điền ANTHROPIC_API_KEY nếu muốn chat trả lời bằng AI
@@ -8,6 +10,47 @@ npm run dev                  # http://localhost:3210
 
 Không cần Docker. Cơ sở dữ liệu là Postgres nhúng (PGlite), nằm ở `.data/pg`. Xoá thư mục đó là về trạng thái ban đầu (mất cả tài khoản đã tạo).
 Đặt `DATABASE_URL` thì chạy trên Postgres thật hoặc Supabase, cùng một `db/schema.sql`.
+
+## Chạy trên Windows
+
+Hướng dẫn này viết theo mã nguồn, chưa được chạy thử trên một máy Windows thật. Gặp lỗi ngoài bảng bên dưới thì báo lại.
+
+**Cần cài trước**
+
+- [Node.js](https://nodejs.org) bản LTS, từ 20 trở lên. Kiểm bằng `node -v`.
+- [Git for Windows](https://git-scm.com/download/win).
+
+**Các bước** (mở PowerShell)
+
+```powershell
+git clone https://github.com/hoangnv98/zmkt.git C:\dev\zmkt
+cd C:\dev\zmkt
+npm install
+Copy-Item .env.example .env.local
+notepad .env.local          # điền ANTHROPIC_API_KEY nếu muốn chat trả lời bằng AI, rồi lưu
+npm run dev
+```
+
+Mở http://localhost:3210 và đăng nhập bằng `test@zmkt.vn` / `zmkt12345`. Dừng máy chủ bằng `Ctrl + C`.
+
+Dùng Command Prompt thay cho PowerShell thì đổi dòng sao chép thành `copy .env.example .env.local`.
+
+**Lưu ý riêng cho Windows**
+
+- Đặt dự án ở đường dẫn ngắn, không dấu, ví dụ `C:\dev\zmkt`. Đừng đặt trong OneDrive hay Google Drive: cơ sở dữ liệu nằm ở `.data\pg` và phần mềm đồng bộ có thể khoá file khi đang ghi.
+- Không cần Docker, không cần cài Postgres hay WSL.
+- Để chat trả lời bằng AI, dùng `ANTHROPIC_API_KEY`. Chế độ `ZMKT_AI=claude-code` gọi lệnh `claude` trực tiếp và có thể không tìm thấy lệnh này trên Windows; nếu vẫn muốn dùng, đặt `ZMKT_CLAUDE_BIN` thành đường dẫn đầy đủ tới `claude.exe`.
+- File đơn hàng xuất từ Excel: chọn kiểu lưu "CSV UTF-8 (Comma delimited)", nếu không tên cột tiếng Việt sẽ lỗi dấu.
+
+**Lỗi hay gặp**
+
+| Hiện tượng | Cách xử lý |
+|---|---|
+| `npm : File ...\npm.ps1 cannot be loaded because running scripts is disabled` | Chạy `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` rồi mở lại PowerShell, hoặc gõ `npm.cmd` thay cho `npm` |
+| `EADDRINUSE` hoặc cổng 3210 đang bận | `netstat -ano \| findstr :3210` để lấy PID, rồi `taskkill /PID <PID> /F` |
+| Muốn xoá dữ liệu về ban đầu | Dừng máy chủ trước, rồi `Remove-Item -Recurse -Force .data` |
+| Trang báo lỗi sau khi cập nhật mã (`git pull`) | Dừng máy chủ, chạy `npm install`, rồi `npm run dev` lại. Khi schema đổi, dữ liệu local được dựng lại từ đầu |
+| Tường lửa Windows hỏi quyền cho Node.js | Chọn cho phép trên mạng riêng. Ứng dụng chỉ chạy trên máy bạn |
 
 ## Đăng nhập
 
